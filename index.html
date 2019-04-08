@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Train Scheduler</title>
+
+  
+  <!-- css RESET page link-->
+  <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css">
+
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ 
+  <!--My css link-->
+  <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+
+ 
+  
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron Title -->
+    <div class="jumbotron">
+      <h1 class="text-center">Grand Central</h1>
+      <h3 class="text-center">Daily Schedule</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card card-default">
+          <div class="card-body" id = "schedule-head">
+            <h4>
+              <strong>Current Train Schedules</strong></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current Product -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card card-default">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-12 col-sm-offset-2">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                      </tr>
+                    </thead>
+                    <tbody class="new-train">
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+    <!-- Make Your Bid -->
+    <div class="row">
+      <div class="col-lg-12" id = "add-train-card">
+        <div class="card card-default">
+          <div class="card-header">
+          <strong>Add Train</strong>  
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <label for="train-name">Train Name</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="destination">Destination</label>
+                <input class="form-control" id="destination-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="firstTrain-time">First Train Time (HH:mm - military time)</label>
+                <input class="form-control" id="first-train" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="frequency">Frequency (min)</label>
+                <input class="form-control" id="frequency-input" type="number">
+              </div>
+              <button class="btn btn-primary" id="add-train" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <!--firebase link-->
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <!--moment.js link-->
+  <script src = https://momentjs.com/downloads/moment.js></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Script -->
+  <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>

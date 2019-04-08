@@ -1,0 +1,21 @@
+body{
+    background-image:url(../images/central.jpg);
+    background-size: cover;
+    /*background-color: rgb(15, 4, 54);*/
+}
+
+
+
+.jumbotron {
+    color: antiquewhite;
+    background-color: #948f8f;
+    background-image:url(../images/licensingimg1.jpg);
+}
+
+.card-header {
+    background-color: #948f8f;
+}
+
+#schedule-head {
+    background-color: #948f8f;
+}
